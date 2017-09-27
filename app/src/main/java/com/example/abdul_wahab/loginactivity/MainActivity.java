@@ -24,8 +24,10 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 final String struser = etusername.getText().toString();
                 final String strpass = etpassword.getText().toString();
+
                 if (struser.equals("") || strpass.equals("")) {
                     Toast.makeText(MainActivity.this, "Username or Password missing", Toast.LENGTH_SHORT).show();
                 } else if (struser.equals(etpassword.getText().toString())) {
